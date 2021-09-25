@@ -1,0 +1,137 @@
+/* Css Document */
+/* Css style */
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fecd04;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.back-top {
+  position: fixed;
+  font-size: 1.2em;
+  text-align: center;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  right: 36px;
+  bottom: 100px;
+  background: rgba(220, 0, 0, 0.8);
+  border-radius: 100%;
+  color: #fff;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  display: none;
+}
+
+.back-top:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #dc0000;
+  color: #dc0000;
+}
+
+.slick-arrow {
+  position: absolute;
+  color: #fff;
+  width: 23pt;
+  height: 23pt;
+  line-height: 23pt;
+  font-size: 20pt;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  background: transparent;
+  border: 1.2px solid #fff;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: opacity 1s ease 0s,transform 1s ease 0s,-webkit-transform 1s ease 0s;
+}
+
+.slick-arrow:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.slick-arrow.bn-prev {
+  left: 1em;
+}
+
+.slick-arrow.bn-next {
+  right: 1em;
+}
+
+.slick-dots {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -2em;
+}
+
+.slick-dots li {
+  position: relative;
+  width: .5em;
+  height: .5em;
+  background: #b4b6b8;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-dots li::before {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: -.25em;
+  left: -.25em;
+  border-radius: 50%;
+  border: .1em solid #b4b4b4;
+  background: transparent;
+}
+
+.slick-dots li.slick-active, .slick-dots li:hover {
+  background: #be1e2d;
+}
+
+.slick-dots li.slick-active:before, .slick-dots li:hover::before {
+  border: .1em solid #be1e2d;
+}
+
+.gmap {
+  padding-top: 40%;
+  margin: 15px 0 0;
+}
+
+.gmap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Css responsives */
+/*# sourceMappingURL=style.css.map */
